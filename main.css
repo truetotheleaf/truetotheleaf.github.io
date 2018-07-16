@@ -10,72 +10,75 @@ html{
   background-size:cover;
 }
 /*AboutPage BackgroundImage*/
-.about-bg{
-  background-image:url(baseball2.jpg);
+.comments-bg{
+  background-image:url(nasa.png);
   background-repeat:none;
   background-size:cover;
   image-rendering:auto;
 }
 /*IndexPage BackgroundImage*/
 .index-bg{
-  background-image:url(nyc2.jpg);
+  background-image:url(redman.jpg);
   background-repeat:none;
   background-size:cover;
   image-rendering:auto;
 }
 /*UpdatePage BackgroundImage*/
 .Update-bg{
-  background-image:url(anonymous.jpg);
+  background-image:url(blackhat.jpg);
   background-repeat:none;
   background-size:cover;
-  background-blend-mode:darken;
   image-rendering:auto;
 }
+
+
+
 /*ImageOnAboutPAge*/
 image{
   float:center;
+  opacity:0.8;
 }
+
+
+
 /*color of text on page*/
 h1{
   color:blue;
-
+  font-size:20px;
+  margin:0px;
+  padding:0px;
 }
 h2{
   color:red;
-  font-size:20px;
+  font-size:25px;
   margin:0px;
   padding:0px;
 }
-h6{
-  color:red;
-  font-size:20px;
-  margin:0px;
-  padding:0px;
-}
-h5{
-  color:red;
-  font-size:20px;
-  margin:0px;
-  padding:0px;
-}
-h4{
-  color:red;
-  font-size:20px;
+h3{
+  color:gray;
+  font-size:30px;
   margin:0px;
   padding:0px;
 }
 p{
-  color:blue;
+  color:white;
   margin:0px;
   padding:0px;
 }
 b{
-  color:yellow;
+  color:#000066;
+  font-size:18px;
 }
+
+
+
 /*Youtube Video*/
 iframe{
   float:right;
 }
+
+
+
 /*Main navbar*/
 .navbar{
   background-color:white;
@@ -125,7 +128,7 @@ iframe{
   color:red;
   display:block;
   transition:1s;
-  overflow:scroll;
+  overflow:none;
 }
 /*side navbar hover*/
 .side-nav a:hover{
@@ -140,9 +143,12 @@ iframe{
   right: 22px;
   font-size: 36px;
 }
+
+
+
 /*artcile links hover color*/
 a:hover{
-  color:red;
+  color:blue;
   text-decoration:none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -152,129 +158,61 @@ a:link{
 }
 /*Links color*/
 a{
-  color:black;
+  color:red;
 }
-.clearing {    
-  clear:both;
+
+/*TextArea*/
+comments{
+  font-family:sans-serif;
+  font-size:20px;
+
 }
+
+
+
+/*SubscribeForm*/
+form {
+  border: 10px solid #f1f1f1;
+  width:50%;
+  float:right;
+  opacity:0.8;
+  
+}
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width:50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0000FF;
+  box-sizing: border-box;
+}
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color:#0000FF;
+  color: #FF0000;
+  border: none;
+}
+input[type=submit]:hover {
+  opacity:0.5;
+  background-color:#0000ff;
+  color:#FF0000;
+}
+
+
+
 @media(max-width:px){
   .navbar-nav{display:none}
 }
 @media(max-width:568px){
-/*.open-slide{display:none}*/
+.open-slide{display:none}
 }
-* {box-sizing: border-box}
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width:100%;
-  padding:20px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color:green;
-  color:white;
-  padding: 14px 20px;
-  margin:auto;
-  border: none;
-  cursor: pointer;
-  width: 26%;
-  opacity: 0.9;
-  float:right;
-}
-
-button:hover {
-  opacity:1;
-}
-
-.submitbtn{
-  background-color: red;
-  padding:14px 20px;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position:center; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 25%; /* Full width */
-  height: 75%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 2px;
-  float:right;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position:center;
-  right:5px;
-  top:10px;
-  font-size: 40px;
-  font-weight: bold;
-  color:red;
-}
-
-.close:hover,
-.close:focus {
-  color:green;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
